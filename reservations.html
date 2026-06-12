@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations & Pricing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><img src="logo.png" alt="Logo"></div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="reservations.html" class="active-link">Reservations</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn-book">BOOK A SESSION</a>
+        </nav>
+        <button class="menu-toggle" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        <div class="mobile-nav-panel" id="mobile-nav-panel">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="reservations.html" class="active-link">Reservations</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn-book-mobile">BOOK A SESSION</a>
+        </div>
+    </header>
+
+    <section class="page-title-banner">
+        <h1>SERVICES & PRICING PAGE</h1>
+    </section>
+
+    <section class="services-section">
+        <h2 class="services-title">OUR TUTORING SERVICES</h2>
+        <div class="cards-container">
+            <div class="price-card border-blue">
+                <div class="card-header bg-blue"><h3>INDIVIDUAL SESSIONS</h3></div>
+                <div class="card-body">
+                    <div class="price">$10/hr</div>
+                    <hr class="card-divider">
+                    <ul><li>Individual attention</li><li>Flexible scheduling</li></ul>
+                    <a href="contact.html" class="btn-card-action bg-blue-btn">BOOK NOW</a>
+                </div>
+            </div>
+            <div class="price-card border-green">
+                <div class="card-header bg-green"><h3>BUNDLE PACKS</h3></div>
+                <div class="card-body">
+                    <div class="price-bundle">5 for $45</div>
+                    <hr class="card-divider">
+                    <ul><li>Discounted session sets</li><li>Progress logs</li></ul>
+                    <a href="contact.html" class="btn-card-action bg-green-btn">BOOK NOW</a>
+                </div>
+            </div>
+            <div class="price-card border-purple">
+                <div class="card-header bg-purple"><h3>EXAM PREP SESSIONS</h3></div>
+                <div class="card-body">
+                    <div class="price-custom">Custom</div>
+                    <hr class="card-divider">
+                    <ul><li>PSLE, JCE, BGCSE Targeted</li><li>Revision maps</li></ul>
+                    <a href="contact.html" class="btn-card-action bg-purple-btn">BOOK NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
