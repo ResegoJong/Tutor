@@ -1,0 +1,476 @@
+/* --- Global Resets & Typography --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* --- Navigation Header --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 6%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 48px;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active-link {
+    color: #38ce91 !important;
+}
+
+.btn-book {
+    background-color: #38ce91;
+    color: white !important;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.btn-book.active-link-btn {
+    background-color: #2bb673 !important;
+}
+
+/* Base Hidden Mobile Elements */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.mobile-nav-panel {
+    display: none;
+}
+
+/* --- Page Header Banner --- */
+.page-title-banner {
+    background-color: #edf7f4;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.page-title-banner h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: 1px;
+}
+
+/* --- About Me Section Layout --- */
+.about-me-container {
+    display: flex;
+    min-height: 440px;
+    background: linear-gradient(135deg, #0f2b48 0%, #114246 100%);
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.about-text-side {
+    flex: 1;
+    padding: 60px 5% 60px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text-side h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-text-side p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #e0ece6;
+    margin-bottom: 25px;
+}
+
+.btn-learn-more {
+    background-color: #10b981;
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 25px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.about-image-side {
+    flex: 1;
+}
+
+.about-image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Services & Pricing Section --- */
+.services-section {
+    background: linear-gradient(135deg, #0d233a 0%, #0f4c43 100%);
+    padding: 60px 5% 80px 5%;
+    text-align: center;
+    color: white;
+}
+
+.services-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.price-card {
+    background-color: #ffffff;
+    color: #333333;
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-header {
+    padding: 18px 15px;
+    color: white;
+    font-size: 0.95rem;
+}
+
+.card-body {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.bg-blue { background-color: #0b2e4f; }
+.bg-green { background-color: #1e7e59; }
+.bg-purple { background-color: #633256; }
+.border-blue { border: 1px solid #0b2e4f; }
+.border-green { border: 1px solid #1e7e59; }
+.border-purple { border: 1px solid #633256; }
+
+.price, .price-bundle, .price-custom {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 10px;
+}
+.price-bundle { font-size: 1.4rem; }
+
+.sub-price {
+    font-size: 0.9rem;
+    color: #666666;
+    font-weight: 600;
+}
+
+.card-divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 15px 0 20px 0;
+}
+
+.card-body h4 {
+    align-self: flex-start;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.card-body ul {
+    list-style: none;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.card-body ul li {
+    font-size: 0.95rem;
+    color: #555555;
+    margin-bottom: 10px;
+    padding-left: 18px;
+    position: relative;
+}
+
+.card-body ul li::before {
+    content: "•";
+    color: #38ce91;
+    position: absolute;
+    left: 0;
+}
+
+.btn-card-action {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.bg-blue-btn { background-color: #154269; }
+.bg-green-btn { background-color: #279e70; }
+.bg-purple-btn { background-color: #7c436d; }
+
+/* --- Past Papers Hub Section --- */
+.hub-section {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.hub-header-bg {
+    background: linear-gradient(135deg, #09203f 0%, #134e5e 100%);
+    padding: 50px 6% 80px 6%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hub-header-bg h2 {
+    font-size: 2.1rem;
+    margin-bottom: 12px;
+}
+
+.hub-subtitle {
+    font-size: 1rem;
+    color: #d1e5e7;
+    margin-bottom: 45px;
+}
+
+.hub-categories {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cat-card {
+    flex: 1;
+    border-radius: 8px;
+    padding: 35px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cat-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.cat-blue { background-color: rgba(11, 37, 69, 0.7); }
+.cat-green { background-color: rgba(30, 94, 71, 0.7); }
+.cat-purple { background-color: rgba(84, 45, 75, 0.7); }
+
+.papers-grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1200px;
+    margin: -40px auto 60px auto;
+    padding: 0 20px;
+}
+
+.paper-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.paper-link {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.paper-link i { margin-right: 12px; }
+.link-blue { background-color: #0b2545; }
+.link-green { background-color: #1e5e47; }
+.link-purple { background-color: #542d4b; }
+
+/* --- Contact & Book Section --- */
+.contact-section {
+    background: linear-gradient(135deg, #09203f 0%, #15423c 50%, #461e43 100%);
+    padding: 70px 6%;
+    color: #ffffff;
+}
+
+.contact-grid-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.contact-left-side {
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-left-side h2 {
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    color: #333;
+}
+
+.btn-submit {
+    align-self: flex-start;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 10px 35px;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.action-buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 480px;
+    padding: 14px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn-whatsapp { background-color: #25d366; color: white; }
+.btn-whatsapp i { margin-left: 10px; }
+.btn-consultation { background-color: #633256; color: white; border: 1px solid #7c436d; }
+
+.contact-right-side { flex: 0.9; width: 100%; }
+.calendly-mock-card { background-color: #ffffff; color: #333333; border-radius: 10px; overflow: hidden; }
+.calendly-header { background-color: #006bff; color: white; padding: 15px 20px; font-weight: 700; }
+.calendly-body { padding: 25px; }
+.calendly-date-selector { display: flex; justify-content: space-between; margin-bottom: 25px; font-weight: 700; }
+.cal-arrow { background: none; border: none; cursor: pointer; }
+.slots-table-header { display: flex; justify-content: space-between; font-size: 0.8rem; color: #888888; border-bottom: 1px solid #eeeeee; padding-bottom: 8px; margin-bottom: 15px; }
+.slots-list { display: flex; flex-direction: column; gap: 15px; }
+.slot-row { display: flex; justify-content: space-between; align-items: center; }
+.time-pill { background-color: #ebf4ff; color: #006bff; border: 1px solid #cce2ff; padding: 8px 14px; border-radius: 4px; font-weight: 700; cursor: pointer; }
+
+/* --- Responsive Mobile Viewports (< 768px) --- */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .menu-toggle { display: block; }
+
+    .mobile-nav-panel {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; left: 0; width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.08);
+        padding: 25px 0; gap: 20px; align-items: center;
+        max-height: 0; opacity: 0; overflow: hidden;
+        transition: max-height 0.35s ease-out, opacity 0.25s ease-out;
+    }
+
+    .mobile-nav-panel.active { max-height: 350px; opacity: 1; }
+    .mobile-nav-panel a { text-decoration: none; color: #333333; font-weight: 600; }
+    .btn-book-mobile { background-color: #38ce91; color: white !important; padding: 12px 0; border-radius: 25px; width: 80%; text-align: center; }
+
+    .about-me-container { flex-direction: column; }
+    .about-text-side { order: 2; padding: 40px 6%; align-items: center; }
+    .about-image-side { order: 1; height: 260px; }
+    .btn-learn-more { display: block; width: 85%; text-align: center; }
+
+    .services-section { padding: 40px 6%; }
+    .cards-container { flex-direction: column; }
+
+    .hub-header-bg { padding: 35px 5%; }
+    .hub-categories { gap: 10px; }
+    .cat-card { min-height: 90px; padding: 10px 5px; }
+    .cat-card h3 { font-size: 0.68rem; }
+    .papers-grid-container { flex-direction: column; margin: 20px auto; }
+
+    .contact-section { padding: 40px 6%; }
+    .contact-grid-container { flex-direction: column; }
+    .contact-left-side { order: 1; }
+    .contact-right-side { order: 2; }
+}
